@@ -2,8 +2,6 @@
 <?php
 session_start();
 
-// ARRAY MET VARIABELEN WORDT GELEEGD.
-$_SESSION = array();
 // DE ARRAQY MET SESSION COOKIES WORDEN OPGEVRAAGD (session_get_cookie_params) en gedeleted door de cookieduur negatief te maken
 // Session destroy vernietigd data die bij de sessie horen(ingevulde formulieren e.d.), maar niet de global vairabelen of de session-cookie.
 if (ini_get("session.use_cookies")) {
@@ -42,7 +40,7 @@ session_destroy();
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: 10px;
+            top: 350px;
         }
         </style>
         
